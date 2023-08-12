@@ -172,7 +172,7 @@ public class TestFragment extends Fragment {
                         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd", Locale.getDefault());
                         try {
                             Date date = dateFormat.parse(dateTest);
-                            testDTO = new TestDTO(nameTest, timeTest, roomTest, dateTest);
+                            testDTO = new TestDTO(dateTest, timeTest, roomTest, nameTest);
 
                         } catch (ParseException e) {
                             edtDateTest.setError("yyyy-MM-dd");
