@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="2dp"
+    app:cardPreventCornerOverlap="false"
+    app:contentPadding="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:id="@+id/lnl_info"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/group_2"
+            android:orientation="vertical"
+            android:padding="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/txt_room"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phòng: 303" />
+
+            <TextView
+                android:id="@+id/txt_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ca: 1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnl_status"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:gravity="top"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/lnl_info"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/txt_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ngày: 10/8/2023" />
+
+            <TextView
+                android:id="@+id/txt_test_subject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Môn: Android 2"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
